@@ -7,6 +7,7 @@ class Phones extends React.Component {
   componentDidMount() {
     this.props.fetchPhones({categoryId: this.props.match.params.id});
     this.props.history.push('/');
+    alert('h')
   }
 
   componentWillReceiveProps(nextProps) {
