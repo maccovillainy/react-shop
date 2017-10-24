@@ -44,7 +44,7 @@ class Phone extends React.Component {
                   <td className='first-column-checkout'>
                     <img
                       className='img-thumbnail'
-                      src={`../assets/${phone.image}`}
+                      src={phone.image}
                       alt={phone.name}
                     />
                   </td>
@@ -52,9 +52,7 @@ class Phone extends React.Component {
                   <td>${phone.price}</td>
                   <td>{phone.count}</td>
                   <td onClick={this.deleteItem.bind(this, phone.id)}>
-                    <span
-                      className='delete-cart'
-                    />
+                    <button className="btn btn-danger">X</button>
                   </td>
                 </tr>
               ))}

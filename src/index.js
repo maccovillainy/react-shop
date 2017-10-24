@@ -21,9 +21,9 @@ render(
   <Provider store={store}>
     <BrowserRouter>
       <Switch>
-        <Route exact path="/react-shop/phone/:id" component={Phone}/>
-        <Route exact path="/react-shop/basket" component={Basket}/>
-        <Route  path="/react-shop/" component={Pages}/>
+        <Route exact path="/phone/:id" component={Phone}/>
+        <Route exact path="/basket" component={Basket}/>
+        <Route  path="/" component={Pages}/>
       </Switch>
     </BrowserRouter>
   </Provider>,

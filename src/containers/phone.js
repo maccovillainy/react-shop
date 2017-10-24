@@ -71,7 +71,7 @@ class Phone extends React.Component {
       <div className="thumbnail">
         <div className="row">
           <div className="col-xs-6">
-            <img src={`../../assets${phone.image}`} alt="" className="img-thumbnail"/>
+            <img src={phone.image} alt="" className="img-thumbnail"/>
           </div>
           <div className="col-xs-6">
             {this.renderFields()}

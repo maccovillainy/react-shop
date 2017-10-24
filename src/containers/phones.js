@@ -26,7 +26,7 @@ class Phones extends React.Component {
     return (
       <div key={index} className="col-xs-4">
         <div className="thumbnail">
-          <img src={`assets/${phone.image}`} alt="" className="img-thumbnail"/>
+          <img src={phone.image} alt="" className="img-thumbnail"/>
           <div className="caption">
             <h4 className="pull-right">{phone.price}</h4>
             <h4>
