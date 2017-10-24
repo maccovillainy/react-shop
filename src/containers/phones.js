@@ -6,6 +6,7 @@ import {getPhones, loadMore, toBusket, getCagegories} from '../actions/phones'
 class Phones extends React.Component {
   componentDidMount() {
     this.props.fetchPhones({categoryId: this.props.match.params.id});
+    
   }
 
   componentWillReceiveProps(nextProps) {
