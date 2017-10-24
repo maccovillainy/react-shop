@@ -7,7 +7,7 @@ import {createStore, applyMiddleware} from 'redux'
 import React from 'react'
 import {render} from 'react-dom'
 import thunk from 'redux-thunk'
-import {BrowserRouter, Route, Switch} from 'react-router-dom'
+import {BrowserRouter, Route, Switch, Redirect} from 'react-router-dom'
 
 import reducers from './redusers/index'
 import Phone  from './containers/phone'
@@ -23,8 +23,8 @@ render(
       <Switch>
         <Route exact path="/phone/:id" component={Phone}/>
         <Route exact path="/basket" component={Basket}/>
+        <Redirect from="/react-shop/dist/index.html" to="/"/>
         <Route  path="/" component={Pages}/>
-        <Route  component={Pages}/>
       </Switch>
     </BrowserRouter>
   </Provider>,

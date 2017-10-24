@@ -24,7 +24,7 @@ class Phones extends React.Component {
     const shortDescription = phone.description.length > 60
       ? phone.description.slice(0, 60) + '...'
       : phone.description;
-    console.log('render phones')
+    console.log('render')
     return (
       <div key={index} className="col-xs-4">
         <div className="thumbnail">
