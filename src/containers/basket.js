@@ -44,7 +44,7 @@ class Phone extends React.Component {
                   <td className='first-column-checkout'>
                     <img
                       className='img-thumbnail'
-                      src={`/assets/${phone.image}`}
+                      src={`../assets/${phone.image}`}
                       alt={phone.name}
                     />
                   </td>
