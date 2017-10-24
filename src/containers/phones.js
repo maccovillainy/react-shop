@@ -1,11 +1,12 @@
 import React from 'react'
 import {connect} from 'react-redux'
-import {Link} from 'react-router-dom'
+import {Link, } from 'react-router-dom'
 import {getPhones, loadMore, toBusket, getCagegories} from '../actions/phones'
 
 class Phones extends React.Component {
   componentDidMount() {
     this.props.fetchPhones({categoryId: this.props.match.params.id});
+    this.props.history.push('/');
   }
 
   componentWillReceiveProps(nextProps) {
