@@ -23,8 +23,8 @@ render(
       <Switch>
         <Route exact path="/phone/:id" component={Phone}/>
         <Route exact path="/basket" component={Basket}/>
-        <Route  path="/react-shop/dist/index.html" component={Pages}/>
         <Route  path="/" component={Pages}/>
+        <Route  component={Pages}/>
       </Switch>
     </BrowserRouter>
   </Provider>,
